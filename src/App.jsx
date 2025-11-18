@@ -17,6 +17,8 @@ import Tests from "./pages/Tests";
 import Vaccine from "./pages/Vaccine";
 import WomensHealth from "./pages/WomensHealth";
 import NotFound from "./pages/NotFound";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const prevenzaProjectRouter = createBrowserRouter([
   { path: '/', element: <Home /> },

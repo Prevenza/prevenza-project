@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+/* In your global CSS file */
+.custom-clip-path {
+  /* This creates the diagonal cut on the bottom edge */
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); 
+}
