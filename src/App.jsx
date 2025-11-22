@@ -13,12 +13,13 @@ import Kits from "./pages/Kits";
 import MensHealth from "./pages/MensHealth";
 import SexualHealth from "./pages/SexualHealth";
 import SingleTest from "./pages/SingleTest";
-import Tests from "./pages/Tests";
+import AllTests from "./pages/AllTests";
 import Vaccine from "./pages/Vaccine";
 import WomensHealth from "./pages/WomensHealth";
 import NotFound from "./pages/NotFound";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Toaster } from "react-hot-toast";
 
 const prevenzaProjectRouter = createBrowserRouter([
   { path: '/', element: <Home /> },
@@ -28,15 +29,15 @@ const prevenzaProjectRouter = createBrowserRouter([
   { path: "/consulting", element: <Consulting /> },
   { path: "/contact", element: <Contact /> },
   { path: "/create-account", element: <CreateAccount /> },
-  { path: "/flourish-care", element: <FlourishCare /> },
+  { path: "/flourish", element: <FlourishCare /> },
   { path: "/general-health", element: <GeneralHealth /> },
   { path: "/health-packages", element: <HealthPackages /> },
   { path: "/kits", element: <Kits /> },
   { path: "/mens-health", element: <MensHealth /> },
   { path: "/sexual-health", element: <SexualHealth /> },
   { path: "/single-test", element: <SingleTest /> },
-  { path: "/tests", element: <Tests /> },
-  { path: "/vaccine", element: <Vaccine /> },
+  { path: "/all-tests", element: <AllTests /> },
+  { path: "/vaccines", element: <Vaccine /> },
   { path: "/womens-health", element: <WomensHealth /> },
   { path: "*", element: <NotFound /> },
 ]);
@@ -45,6 +46,7 @@ export default function App() {
 
   return (
     <>
+      <Toaster position="top-center" />
       <RouterProvider router={prevenzaProjectRouter} />
     </>
   )
